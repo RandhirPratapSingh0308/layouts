@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
 </head>
 
 <body>
@@ -136,7 +137,7 @@
                     placeholder="Name*" />
                 </div>
                 <div class="mb-3">
-                  <input type="number" class="form-control" id="NqSenderMobileNo" placeholder="Mobile Number*" />
+                  <input type="text" class="form-control phone-input" id="NqSenderMobileNo" placeholder="Mobile Number*" />
                 </div>
                 <div class="mb-3">
                   <input type="email" class="form-control" id="NqSenderEmailID" placeholder="Email*" />
@@ -181,7 +182,7 @@
                     placeholder="Name*" />
                 </div>
                 <div class="mb-3">
-                  <input type="number" class="form-control" id="DqSenderMobileNo" placeholder="Mobile Number*" />
+                  <input type="text" class="form-control phone-input" id="DqSenderMobileNo" placeholder="Mobile Number*" />
                 </div>
                 <div class="mb-3">
                   <input type="email" class="form-control" id="DqSenderEmailID" placeholder="Email*" />
@@ -226,7 +227,7 @@
                     placeholder="Name*" />
                 </div>
                 <div class="mb-3">
-                  <input type="number" class="form-control" id="GqSenderMobileNo" placeholder="Mobile Number*" />
+                  <input type="text" class="form-control phone-input" id="GqSenderMobileNo" placeholder="Mobile Number*" />
                 </div>
                 <div class="mb-3">
                   <input type="email" class="form-control" id="GqSenderEmailID" placeholder="Email*" />
@@ -271,7 +272,7 @@
                     placeholder="Name*" />
                 </div>
                 <div class="mb-3">
-                  <input type="number" class="form-control" id="PqSenderMobileNo" placeholder="Mobile Number*" />
+                  <input type="text" class="form-control phone-input" id="PqSenderMobileNo" placeholder="Mobile Number*" />
                 </div>
                 <div class="mb-3">
                   <input type="email" class="form-control" id="PqSenderEmailID" placeholder="Email*" />
@@ -315,7 +316,7 @@
                     placeholder="Name*" />
                 </div>
                 <div class="mb-3">
-                  <input type="number" class="form-control" id="MqSenderMobileNo" placeholder="Mobile Number*" />
+                  <input type="text" class="form-control phone-input" id="MqSenderMobileNo" placeholder="Mobile Number*" />
                 </div>
                 <div class="mb-3">
                   <input type="email" class="form-control" id="MqSenderEmailID" placeholder="Email*" />
@@ -359,7 +360,7 @@
                     placeholder="Name*" />
                 </div>
                 <div class="mb-3">
-                  <input type="number" class="form-control" id="KqSenderMobileNo" placeholder="Mobile Number*" />
+                  <input type="text" class="form-control phone-input" id="KqSenderMobileNo" placeholder="Mobile Number*" />
                 </div>
                 <div class="mb-3">
                   <input type="email" class="form-control" id="KqSenderEmailID" placeholder="Email*" />
@@ -403,7 +404,7 @@
                     placeholder="Name*" />
                 </div>
                 <div class="mb-3">
-                  <input type="number" class="form-control" id="HqSenderMobileNo" placeholder="Mobile Number*" />
+                  <input type="text" class="form-control phone-input" id="HqSenderMobileNo" placeholder="Mobile Number*" />
                 </div>
                 <div class="mb-3">
                   <input type="email" class="form-control" id="HqSenderEmailID" placeholder="Email*" />
@@ -447,7 +448,7 @@
                     placeholder="Name*" />
                 </div>
                 <div class="mb-3">
-                  <input type="number" class="form-control" id="BqSenderMobileNo" placeholder="Mobile Number*" />
+                  <input type="text" class="form-control phone-input" id="BqSenderMobileNo" placeholder="Mobile Number*" />
                 </div>
                 <div class="mb-3">
                   <input type="email" class="form-control" id="BqSenderEmailID" placeholder="Email*" />
@@ -492,7 +493,7 @@
                     placeholder="Name*" />
                 </div>
                 <div class="mb-3">
-                  <input type="number" class="form-control" id="AqSenderMobileNo" placeholder="Mobile Number*" />
+                  <input type="text" class="form-control phone-input" id="AqSenderMobileNo" placeholder="Mobile Number*" />
                 </div>
                 <div class="mb-3">
                   <input type="email" class="form-control" id="AqSenderEmailID" placeholder="Email*" />
@@ -524,6 +525,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+
 
     <script type="text/javascript" language="javascript" defer> 
     var versionUpdate = new Date().getTime();
@@ -641,6 +644,45 @@
 
 
   </script>
+
+
+<script>
+
+
+        $(document).ready(function () {
+            $('.phone-input').each(function () {
+                const input = this;
+                const output = $(this).siblings(".output");
+                const iti = window.intlTelInput(input, {
+                    allowDropdown: true,
+                    separateDialCode: true,
+                    initialCountry: 'auto',
+                    geoIpLookup: callback => {
+                        fetch("https://ipapi.co/json")
+                            .then(res => res.json())
+                            .then(data => callback(data.country_code))
+                            .catch(() => callback("in"));
+                    },
+                    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js"
+                });
+
+                const handleChange = () => {
+                    let text;
+                    if (input.value) {
+                        text = iti.isValidNumber()
+                            ? "Valid number! Full international format: " + iti.getNumber()
+                            : "Invalid number - please try again";
+                    } else {
+                        text = "Please enter a valid number";
+                    }
+                    output.empty().text(text);
+                };
+                // listen to "keyup", but also "change" to update when the user selects a country
+                $(input).on('change keyup', handleChange);
+            });
+        });
+
+    </script>
 </body>
 
 </html>
