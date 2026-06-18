@@ -154,13 +154,13 @@ background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255,
   left: 0;
 }
 .city_box{
-      padding: 30px 20px;
+      padding: 40px 20px;
     border: 1px solid var(--text-white);
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width: 80%;
+    width: 100%;
     margin: auto;
     gap: 10px;
     justify-content: space-between;
@@ -168,7 +168,7 @@ background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255,
     transition: transform 0.5s;
 }
 .city_card_col{
-  padding-top: 55px;
+  padding-top: 25px;
 }
 .city_box_bg{
   background-color: var(--primary-color);
@@ -281,8 +281,11 @@ background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255,
   font-size: 28px;
 }
   .city_box{
-  padding: 20px 12px;
+  padding: 30px 12px;
   }
+  .city_card_col{
+      padding-top: 25px !important;
+    }
   .city_box img{
   width: 70px;
 }
@@ -299,12 +302,12 @@ background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255,
 
 @media (max-width: 1280px) {
 
-  .city_box {
+  /* .city_box {
         width: 85%;
-    }
-    .city_card_col{
+    } */
+    /* .city_card_col{
       padding-top: 45px !important;
-    }
+    } */
 }
 
 
