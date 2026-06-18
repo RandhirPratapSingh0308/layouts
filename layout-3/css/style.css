@@ -163,7 +163,7 @@ background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255,
     cursor: pointer;
     transition: transform 0.5s;
 }
-.coty_card_col{
+.city_card_col{
   padding-top: 40px;
 }
 .city_box_bg{
@@ -248,6 +248,7 @@ background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255,
   text-decoration: none;
   color: var(--text-white);
   text-align: left;
+  cursor: pointer;
 
 }
 
@@ -319,7 +320,12 @@ background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255,
     }
     .city_box {
         padding: 5px 6px;
-        gap: 5;
+        width: 100%;
+    }
+    .city_card_col{
+      padding-left: 6px !important;
+      padding-right: 6px !important;
+      padding-top: 12px !important;
     }
     .city_box p {
         font-size: 12px;
@@ -328,7 +334,27 @@ background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255,
       font-size: 24px;
     }
     
+    .disc{
+  position: static;
+  color: var(--text-white);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 100%;
+  background-color: #0e0e0e;
+  padding: 10px;
+  
+}
+.disc  p{
+  width: 95%;
+  margin: auto;
+}
 
+.banner_img{
+  height: 100vh;
+  width: 100%;
+}
 
   
 
