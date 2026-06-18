@@ -28,12 +28,18 @@ html {
   font-display: swap;
   src: url("../fonts/DMSans_18pt-Bold.ttf");
 }
+@font-face {
+  font-family: "Lato-Regular";
+  font-display: swap;
+  src: url("../fonts/Lato-Regular.ttf");
+}
 
 :root {
   --primary-color: #87742E;
   --text-white: #fff;
   --DMSans-Regular: "DMSans-Regular";
   --DMSans-Bold: "DMSans-Bold";
+  --Lato-Regular: "Lato-Regular";
   --CormorantGaramond-Regular: "CormorantGaramond-Regular";
   --CormorantGaramond-Bold: "CormorantGaramond-Bold";
 }
@@ -103,7 +109,7 @@ header::before{
 }
 .banner_content{
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 0;
   color: var(--text-white);
   text-align: center; 
@@ -117,7 +123,7 @@ header::before{
   text-align: left;
 }
 .project_desc{
-  font-family: var(--DMSans-Regular);
+  font-family: var(--Lato-Bold);
   font-size: 16px;
   letter-spacing: 1.5px;
   text-align: left;
@@ -144,16 +150,21 @@ background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255,
   left: 0;
 }
 .city_box{
-  padding: 20px 15px;
-  border: 1px solid var(--text-white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  gap: 10px;
-  justify-content: space-between;
-  cursor: pointer;
-  transition: transform 0.5s;
+      padding: 30px 20px;
+    border: 1px solid var(--text-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    gap: 10px;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.coty_card_col{
+  padding-top: 40px;
 }
 .city_box_bg{
   background-color: var(--primary-color);
@@ -213,12 +224,42 @@ background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255,
   font-size: 18px;
 
 }
+.disc{
+  position: absolute;
+  left: 5%;
+  bottom: 10px;
+  z-index: 9999;
+  color: var(--text-white);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 95%;
+  
+}
+.disc p{
+  font-size: 10px;
+  font-family: var(--Lato-Regular);
+  margin-bottom: 0;
+  text-align: left;
+  letter-spacing: 1.5px;
+}
+.disc p a{
+  text-decoration: none;
+  color: var(--text-white);
+  text-align: left;
+
+}
 
 
 @media (max-width: 1440px) {
+  .banner_content{
+    top: 15%;
+}
   .project_name{
   font-size: 45px;
 }
+
 .project_desc{
   font-size: 14px;
 }
@@ -264,7 +305,7 @@ background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255,
 .project_desc{
   font-size: 14px;
   letter-spacing: 1.5px;
-  text-align: justify;
+  text-align: left;
   line-height: 20px;
 }
 .left_content{
