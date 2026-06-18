@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout-2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav_bar  fixed-top">
+            <div class="container">
+                <img src="images/developer-logo-white.png" class="nav_logo" alt="Godrej Logo">
+                <button class="btn d-none d-md-block"  >
+                    <a href="tel:+91 9999999999" class="call_button"><img src="images/call.png" alt="Call Us"> +91 9999-999-999</a>
+                </button>
+                
+            </div>
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide">
+        
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <picture>
+                        <source media="(max-width:465px)" srcset="images/banner/banner1.webp">
+                        <img src="images/banner/banner1.webp" alt="banner image" class="banner_img">
+                    </picture>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="banner_content">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6 left_content">
+                        <div class="project_name">Godrej Properties</div>
+                        <div class="project_desc">Godrej Properties is one of India's most renowned real estate developers, offering premium apartments, villas, and commercial projects. Driven by excellence, innovation, and sustainability, the company delivers thoughtfully designed developments that enhance urban living experiences.</div>
+
+                        <button class="btn d-block d-md-none my-4"  style=" padding: 0px; width: fit-content;" >
+                    <a href="tel:+91 9999999999" class="call_button "><img src="images/call.png" alt="Call Us"> +91 9999-999-999</a>
+                </button>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="city_title">Select Your City</div>
+                        <div class="row">
+                            <div class="col-4 col-md-4 mt-md-4 mt-3 px-2 px-md-4">
+                                <div class="city_box" data-bs-toggle="modal" data-bs-target="#NexampleModal">
+                                <img src="images/city/noida.webp" alt="noida">
+                                <p>Noida</p>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-4 mt-md-4 mt-3 px-2 px-md-4">
+                                <div class="city_box city_box_bg" data-bs-toggle="modal" data-bs-target="#DexampleModal">
+                                <img src="images/city/delhi.webp" alt="noida">
+                                <p>Delhi</p>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-4  mt-md-4 mt-3 px-2 px-md-4">
+                                <div class="city_box" data-bs-toggle="modal" data-bs-target="#GexampleModal">
+                                    <img src="images/city/gurgaon.webp" alt="noida">
+                                    <p>Gurgaon</p>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-4  mt-md-4 mt-3 px-2 px-md-4">
+                                <div class="city_box city_box_bg" data-bs-toggle="modal" data-bs-target="#PexampleModal">
+                                <img src="images/city/pune.webp" alt="noida">
+                                <p>Pune</p>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-4  mt-md-4 mt-3 px-2 px-md-4">
+                                <div class="city_box" data-bs-toggle="modal" data-bs-target="#MexampleModal">
+                                <img src="images/city/mumbai.webp" alt="noida">
+                                <p>Mumbai</p>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-4 mt-md-4 mt-3 px-2 px-md-4">
+                                <div class="city_box city_box_bg" data-bs-toggle="modal" data-bs-target="#KexampleModal">
+                                <img src="images/city/kolkata.webp" alt="noida">
+                                <p>Kolkata</p>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-4 mt-md-4 mt-3 px-2 px-md-4">
+                                <div class="city_box " data-bs-toggle="modal" data-bs-target="#HexampleModal">
+                                <img src="images/city/hyderabad.webp" alt="noida">
+                                <p>Hyderabad</p>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-4  mt-md-4 mt-3 px-2 px-md-4">
+                                <div class="city_box city_box_bg " data-bs-toggle="modal" data-bs-target="#BexampleModal">
+                                <img src="images/city/bangalore.webp" alt="noida">
+                                <p>Bangalore</p>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-4  mt-md-4 mt-3 px-2 px-md-4">
+                                <div class="city_box" data-bs-toggle="modal" data-bs-target="#AexampleModal">
+                                <img src="images/city/ahmedabad.webp" alt="noida">
+                                <p>Ahmedabad</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        
+    </header>
+
+    
+<div class="modal fade" id="NexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 550px">
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <div class="row">
+            <!-- <div class="col-md-6">
+              <img src="images/strips/Greenfront-popup.jpg" class="w-100" alt="popup-image" />
+            </div> -->
+            <div class="col-md-12">
+              <h3 class="popupTitle">Noida Properties</h3>
+              <div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="NqSenderName" aria-describedby="name"
+                    placeholder="Name*" />
+                </div>
+                <div class="mb-3">
+                  <input type="number" class="form-control" id="NqSenderMobileNo" placeholder="Mobile Number*" />
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="NqSenderEmailID" placeholder="Email*" />
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="NqSendermessage" placeholder="Message*" />
+                </div>
+                <div class="inp-box d-flex align-items-center">
+                  <input type="checkbox" checked="" id="vehicle1" name="vehicle1" value="form-checkbox"
+                    style="width: 15px; margin-right: 8px" />
+
+                  <label for="vehicle1" class="inp-txt black" style="font-size: 10px; color: #ffffff">
+                    I authorize company representatives to Call, SMS, Email or
+                    WhatsApp me about its products and offers. This consent
+                    overrides any registration for DNC/NDNC.</label>
+                </div>
+                <button type="submit" class="formBtn mt-3 btn" id="NSubmitQuery">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="DexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 550px">
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <div class="row">
+            <!-- <div class="col-md-6">
+              <img src="images/strips/Greenfront-popup.jpg" class="w-100" alt="popup-image" />
+            </div> -->
+            <div class="col-md-12">
+              <h3 class="popupTitle">Delhi Properties</h3>
+              <div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="DqSenderName" aria-describedby="name"
+                    placeholder="Name*" />
+                </div>
+                <div class="mb-3">
+                  <input type="number" class="form-control" id="DqSenderMobileNo" placeholder="Mobile Number*" />
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="DqSenderEmailID" placeholder="Email*" />
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="DqSendermessage" placeholder="Message*" />
+                </div>
+                <div class="inp-box d-flex align-items-center">
+                  <input type="checkbox" checked="" id="vehicle1" name="vehicle1" value="form-checkbox"
+                    style="width: 15px; margin-right: 8px" />
+
+                  <label for="vehicle1" class="inp-txt black" style="font-size: 10px; color: #ffffff">
+                    I authorize company representatives to Call, SMS, Email or
+                    WhatsApp me about its products and offers. This consent
+                    overrides any registration for DNC/NDNC.</label>
+                </div>
+                <button type="submit" class="formBtn mt-3 btn" id="DSubmitQuery">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="GexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 550px">
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <div class="row">
+            <!-- <div class="col-md-6">
+              <img src="images/strips/Greenfront-popup.jpg" class="w-100" alt="popup-image" />
+            </div> -->
+            <div class="col-md-12">
+              <h3 class="popupTitle">Gurgaon Properties</h3>
+              <div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="GqSenderName" aria-describedby="name"
+                    placeholder="Name*" />
+                </div>
+                <div class="mb-3">
+                  <input type="number" class="form-control" id="GqSenderMobileNo" placeholder="Mobile Number*" />
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="GqSenderEmailID" placeholder="Email*" />
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="GqSendermessage" placeholder="Message*" />
+                </div>
+                <div class="inp-box d-flex align-items-center">
+                  <input type="checkbox" checked="" id="vehicle1" name="vehicle1" value="form-checkbox"
+                    style="width: 15px; margin-right: 8px" />
+
+                  <label for="vehicle1" class="inp-txt black" style="font-size: 10px; color: #ffffff">
+                    I authorize company representatives to Call, SMS, Email or
+                    WhatsApp me about its products and offers. This consent
+                    overrides any registration for DNC/NDNC.</label>
+                </div>
+                <button type="submit" class="formBtn mt-3 btn" id="GSubmitQuery">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="PexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 550px">
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <div class="row">
+            <!-- <div class="col-md-6">
+              <img src="images/strips/Greenfront-popup.jpg" class="w-100" alt="popup-image" />
+            </div> -->
+            <div class="col-md-12">
+              <h3 class="popupTitle">Pune Properties</h3>
+              <div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="PqSenderName" aria-describedby="name"
+                    placeholder="Name*" />
+                </div>
+                <div class="mb-3">
+                  <input type="number" class="form-control" id="PqSenderMobileNo" placeholder="Mobile Number*" />
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="PqSenderEmailID" placeholder="Email*" />
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="PqSendermessage" placeholder="Message*" />
+                </div>
+                <div class="inp-box d-flex align-items-center">
+                  <input type="checkbox" checked="" id="vehicle1" name="vehicle1" value="form-checkbox"
+                    style="width: 15px; margin-right: 8px" />
+
+                  <label for="vehicle1" class="inp-txt black" style="font-size: 10px; color: #ffffff">
+                    I authorize company representatives to Call, SMS, Email or
+                    WhatsApp me about its products and offers. This consent
+                    overrides any registration for DNC/NDNC.</label>
+                </div>
+                <button type="submit" class="formBtn mt-3 btn" id="PSubmitQuery">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="MexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 550px">
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <div class="row">
+            <!-- <div class="col-md-6">
+              <img src="images/strips/Greenfront-popup.jpg" class="w-100" alt="popup-image" />
+            </div> -->
+            <div class="col-md-12">
+              <h3 class="popupTitle">Mumbai Properties</h3>
+              <div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="MqSenderName" aria-describedby="name"
+                    placeholder="Name*" />
+                </div>
+                <div class="mb-3">
+                  <input type="number" class="form-control" id="MqSenderMobileNo" placeholder="Mobile Number*" />
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="MqSenderEmailID" placeholder="Email*" />
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="MqSendermessage" placeholder="Message*" />
+                </div>
+                <div class="inp-box d-flex align-items-center">
+                  <input type="checkbox" checked="" id="vehicle1" name="vehicle1" value="form-checkbox"
+                    style="width: 15px; margin-right: 8px" />
+
+                  <label for="vehicle1" class="inp-txt black" style="font-size: 10px; color: #ffffff">
+                    I authorize company representatives to Call, SMS, Email or
+                    WhatsApp me about its products and offers. This consent
+                    overrides any registration for DNC/NDNC.</label>
+                </div>
+                <button type="submit" class="formBtn mt-3 btn" id="MSubmitQuery">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="KexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 550px">
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <div class="row">
+            <!-- <div class="col-md-6">
+              <img src="images/strips/Greenfront-popup.jpg" class="w-100" alt="popup-image" />
+            </div> -->
+            <div class="col-md-12">
+              <h3 class="popupTitle">Kolkata Properties</h3>
+              <div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="KqSenderName" aria-describedby="name"
+                    placeholder="Name*" />
+                </div>
+                <div class="mb-3">
+                  <input type="number" class="form-control" id="KqSenderMobileNo" placeholder="Mobile Number*" />
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="KqSenderEmailID" placeholder="Email*" />
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="KqSendermessage" placeholder="Message*" />
+                </div>
+                <div class="inp-box d-flex align-items-center">
+                  <input type="checkbox" checked="" id="vehicle1" name="vehicle1" value="form-checkbox"
+                    style="width: 15px; margin-right: 8px" />
+
+                  <label for="vehicle1" class="inp-txt black" style="font-size: 10px; color: #ffffff">
+                    I authorize company representatives to Call, SMS, Email or
+                    WhatsApp me about its products and offers. This consent
+                    overrides any registration for DNC/NDNC.</label>
+                </div>
+                <button type="submit" class="formBtn mt-3 btn" id="KSubmitQuery">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="HexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 550px">
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <div class="row">
+            <!-- <div class="col-md-6">
+              <img src="images/strips/Greenfront-popup.jpg" class="w-100" alt="popup-image" />
+            </div> -->
+            <div class="col-md-12">
+              <h3 class="popupTitle">Hyderabad Properties</h3>
+              <div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="HqSenderName" aria-describedby="name"
+                    placeholder="Name*" />
+                </div>
+                <div class="mb-3">
+                  <input type="number" class="form-control" id="HqSenderMobileNo" placeholder="Mobile Number*" />
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="HqSenderEmailID" placeholder="Email*" />
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="HqSendermessage" placeholder="Message*" />
+                </div>
+                <div class="inp-box d-flex align-items-center">
+                  <input type="checkbox" checked="" id="vehicle1" name="vehicle1" value="form-checkbox"
+                    style="width: 15px; margin-right: 8px" />
+
+                  <label for="vehicle1" class="inp-txt black" style="font-size: 10px; color: #ffffff">
+                    I authorize company representatives to Call, SMS, Email or
+                    WhatsApp me about its products and offers. This consent
+                    overrides any registration for DNC/NDNC.</label>
+                </div>
+                <button type="submit" class="formBtn mt-3 btn" id="HSubmitQuery">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="BexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 550px">
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <div class="row">
+            <!-- <div class="col-md-6">
+              <img src="images/strips/Greenfront-popup.jpg" class="w-100" alt="popup-image" />
+            </div> -->
+            <div class="col-md-12">
+              <h3 class="popupTitle">Bangalore Properties</h3>
+              <div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="BqSenderName" aria-describedby="name"
+                    placeholder="Name*" />
+                </div>
+                <div class="mb-3">
+                  <input type="number" class="form-control" id="BqSenderMobileNo" placeholder="Mobile Number*" />
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="BqSenderEmailID" placeholder="Email*" />
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="BqSendermessage" placeholder="Message*" />
+                </div>
+                <div class="inp-box d-flex align-items-center">
+                  <input type="checkbox" checked="" id="vehicle1" name="vehicle1" value="form-checkbox"
+                    style="width: 15px; margin-right: 8px" />
+
+                  <label for="vehicle1" class="inp-txt black" style="font-size: 10px; color: #ffffff">
+                    I authorize company representatives to Call, SMS, Email or
+                    WhatsApp me about its products and offers. This consent
+                    overrides any registration for DNC/NDNC.</label>
+                </div>
+                <button type="submit" class="formBtn mt-3 btn" id="BSubmitQuery">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="AexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 550px">
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <div class="row">
+            <!-- <div class="col-md-6">
+              <img src="images/strips/Greenfront-popup.jpg" class="w-100" alt="popup-image" />
+            </div> -->
+            <div class="col-md-12">
+              <h3 class="popupTitle">Ahmedabad Properties</h3>
+              <div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="AqSenderName" aria-describedby="name"
+                    placeholder="Name*" />
+                </div>
+                <div class="mb-3">
+                  <input type="number" class="form-control" id="AqSenderMobileNo" placeholder="Mobile Number*" />
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="AqSenderEmailID" placeholder="Email*" />
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="AqSendermessage" placeholder="Message*" />
+                </div>
+                <div class="inp-box d-flex align-items-center">
+                  <input type="checkbox" checked="" id="vehicle1" name="vehicle1" value="form-checkbox"
+                    style="width: 15px; margin-right: 8px" />
+
+                  <label for="vehicle1" class="inp-txt black" style="font-size: 10px; color: #ffffff">
+                    I authorize company representatives to Call, SMS, Email or
+                    WhatsApp me about its products and offers. This consent
+                    overrides any registration for DNC/NDNC.</label>
+                </div>
+                <button type="submit" class="formBtn mt-3 btn" id="ASubmitQuery">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript" language="javascript" defer> 
+    var versionUpdate = new Date().getTime();
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src =
+      "https://api2.gtftech.com/scripts/queryform.min.ssl.js?v=" +
+      versionUpdate;
+    document.body.appendChild(script);
+  </script>
+
+  <script>
+    var AgentInfo = {
+      vAgentID: "4995",
+      vProject: "Godrej Property",
+      vURL: "https://websitedesigningcompany.co.in/demo-gtf/greenfron-layout/",
+      thankspageurl:
+        "https://websitedesigningcompany.co.in/demo-gtf/greenfron-layout/thanks.htm",
+    };
+
+    //Needs to be duplicate in the case of multiple forms on the same page
+    //--------------------------------------------------------------------------------------//
+    $("#preferedtime").hide();
+
+    $("#NSubmitQuery").click(function () {
+      var FormInfo = {
+        SenderControlID: "NqSenderName",
+        SenderControlMobileID: "NqSenderMobileNo",
+        SenderControlEmailID: "NqSenderEmailID",
+        SenderControlMsgID: "NqSendermessage",
+      };
+
+      SubmitQueryData(AgentInfo, FormInfo);
+    });
+    $("#DSubmitQuery").click(function () {
+      var FormInfo = {
+        SenderControlID: "DqSenderName",
+        SenderControlMobileID: "DqSenderMobileNo",
+        SenderControlEmailID: "DqSenderEmailID",
+        SenderControlMsgID: "DqSendermessage",
+      };
+
+      SubmitQueryData(AgentInfo, FormInfo);
+    });
+    $("#GSubmitQuery").click(function () {
+      var FormInfo = {
+        SenderControlID: "GqSenderName",
+        SenderControlMobileID: "GqSenderMobileNo",
+        SenderControlEmailID: "GqSenderEmailID",
+        SenderControlMsgID: "GqSendermessage",
+      };
+
+      SubmitQueryData(AgentInfo, FormInfo);
+    });
+    $("#PSubmitQuery").click(function () {
+      var FormInfo = {
+        SenderControlID: "PqSenderName",
+        SenderControlMobileID: "PqSenderMobileNo",
+        SenderControlEmailID: "PqSenderEmailID",
+        SenderControlMsgID: "PqSendermessage",
+      };
+
+      SubmitQueryData(AgentInfo, FormInfo);
+    });
+    $("#MSubmitQuery").click(function () {
+      var FormInfo = {
+        SenderControlID: "MqSenderName",
+        SenderControlMobileID: "MqSenderMobileNo",
+        SenderControlEmailID: "MqSenderEmailID",
+        SenderControlMsgID: "MqSendermessage",
+      };
+
+      SubmitQueryData(AgentInfo, FormInfo);
+    });
+    $("#KSubmitQuery").click(function () {
+      var FormInfo = {
+        SenderControlID: "KqSenderName",
+        SenderControlMobileID: "KqSenderMobileNo",
+        SenderControlEmailID: "KqSenderEmailID",
+        SenderControlMsgID: "KqSendermessage",
+      };
+
+      SubmitQueryData(AgentInfo, FormInfo);
+    });
+    $("#HSubmitQuery").click(function () {
+      var FormInfo = {
+        SenderControlID: "HqSenderName",
+        SenderControlMobileID: "HqSenderMobileNo",
+        SenderControlEmailID: "HqSenderEmailID",
+        SenderControlMsgID: "HqSendermessage",
+      };
+
+      SubmitQueryData(AgentInfo, FormInfo);
+    });
+    $("#BSubmitQuery").click(function () {
+      var FormInfo = {
+        SenderControlID: "BqSenderName",
+        SenderControlMobileID: "BqSenderMobileNo",
+        SenderControlEmailID: "BqSenderEmailID",
+        SenderControlMsgID: "BqSendermessage",
+      };
+
+      SubmitQueryData(AgentInfo, FormInfo);
+    });
+    $("#ASubmitQuery").click(function () {
+      var FormInfo = {
+        SenderControlID: "AqSenderName",
+        SenderControlMobileID: "AqSenderMobileNo",
+        SenderControlEmailID: "AqSenderEmailID",
+        SenderControlMsgID: "AqSendermessage",
+      };
+
+      SubmitQueryData(AgentInfo, FormInfo);
+    });
+
+
+  </script>
+</body>
+
+</html>

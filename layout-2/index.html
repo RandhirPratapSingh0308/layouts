@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout-2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar  fixed-top">
+            <div class="container">
+                <img src="images/logo.png" class="nav_logo" alt="Godrej Logo">
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar">
+                    <img src="images/menu_icon.png" alt="menu-icon" class="menu_icon">
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img src="images/logo.png" class="manu_logo" alt="Godrej Logo">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Overview</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Prime Location</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Floor Plan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Amenities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">About Builder</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <picture>
+                        <source media="(max-width:465px)" srcset="images/banner/banner1.png">
+                        <img src="images/banner/banner1.png" alt="banner image" class="banner_img">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(max-width:465px)" srcset="images/banner/banner1.png"> 
+                        <img src="images/banner/banner1.png" alt="banner image" class="banner_img">
+                    </picture>
+                </div>
+                <div class="carousel-item"> 
+                    <picture>
+                        <source media="(max-width:465px)" srcset="images/banner/banner1.png">
+                        <img src="images/banner/banner1.png" alt="banner image" class="banner_img">
+                    </picture>
+                </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button> -->
+        </div>
+
+        <div class="banner_content">
+            <div class="border_top"></div>
+            <div class="border_left"></div>
+            <h1 class="project_name">Godrej Vanantara</h1>
+            <p class="banner_location"><img src="images/location.png" alt="Location" > At Bannerghatta Main Road, South Bangalore</p>
+            <div class="banner_typology">
+                <p>2, 3, 3.5 & 4.5 BHK Apartments</p>
+            </div>
+            <div class="banner_price">
+                <p>Starting from <br> <span>₹ 1.25 Crs*</span></p>
+            </div>
+            <button class="btn custome_btn ">Schedule A Virtual Site Visit </button>
+        </div>
+        <div class="keyhighlights_box">
+            <div class="keyhighlights_item">
+                <div class="circle_box"></div>
+                <p>Exclusive EOI Benefits: 8-15 Lacs*</p>
+            </div>
+            <div class="keyhighlights_item">
+                <div class="circle_box"></div>
+                <p>Exclusive EOI Benefits: 8-15 Lacs*</p>
+            </div>
+            <div class="keyhighlights_item">
+                <div class="circle_box"></div>
+                <p>Exclusive EOI Benefits: 8-15 Lacs*</p>
+            </div>
+            <div class="keyhighlights_item">
+                <div class="circle_box"></div>
+                <p>Exclusive EOI Benefits: 8-15 Lacs*</p>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="overview_sec section_padding">
+        <h1>overview</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam debitis nesciunt ratione vel porro temporibus adipisci, exercitationem ipsa eaque ipsum itaque. Vero quibusdam soluta sit qui dolor cumque delectus quis?</p>
+    </section>
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
