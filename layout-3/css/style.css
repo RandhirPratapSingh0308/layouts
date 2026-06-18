@@ -168,7 +168,7 @@ background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255,
     transition: transform 0.5s;
 }
 .city_card_col{
-  padding-top: 50px;
+  padding-top: 55px;
 }
 .city_box_bg{
   background-color: var(--primary-color);
@@ -238,7 +238,7 @@ background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255,
   position: absolute;
   left: 5%;
   bottom: 10px;
-  z-index: 9999;
+  z-index: 999;
   color: var(--text-white);
   display: flex;
   justify-content: center;
@@ -265,7 +265,7 @@ background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255,
 
 @media (max-width: 1440px) {
   .city_card_col {
-    padding-top: 48px;
+    padding-top: 50px;
 }
   .banner_content{
     top: 15%;
@@ -281,7 +281,7 @@ background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255,
   font-size: 28px;
 }
   .city_box{
-  padding: 10px 12px;
+  padding: 20px 12px;
   }
   .city_box img{
   width: 70px;
@@ -293,7 +293,7 @@ background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255,
 
 @media (max-width: 1366px) {
   .city_card_col {
-    padding-top: 45px;
+    padding-top: 50px;
 }
 }
 
@@ -303,7 +303,7 @@ background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255,
         width: 85%;
     }
     .city_card_col{
-      padding-top: 35px !important;
+      padding-top: 45px !important;
     }
 }
 
