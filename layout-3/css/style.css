@@ -282,6 +282,12 @@ background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255,
 }
 
 @media (max-width: 1280px) {
+  .city_box {
+        width: 96%;
+    }
+    .city_card_col{
+      padding-top: 32px !important;
+    }
 }
 
 
